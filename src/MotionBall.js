@@ -12,8 +12,8 @@ export default class MotionBall extends React.Component {
   }
 
   generateValues() {
-    const max = 400;
-    const min = -400;
+    const max = 300;
+    const min = -300;
     const dx = Math.random() * (max - min) + min;
     const dy = Math.random() * (max - min) + min;
     return { dx, dy };
@@ -53,9 +53,9 @@ export default class MotionBall extends React.Component {
   }
 
   render() {
-    const { dx, dy } = this.props;
+    const { dx, dy, type } = this.props;
     return (
-      <div style={{transform: `translate3d(${dx}px, ${dy}px, 0)`}} className='MotionBall' onClick={(e) => this.click(e)}>
+      <div style={{transform: `translate3d(${dx}px, ${dy}px, 0)`}} className={`Motion${type}`} onClick={(e) => this.click(e)}>
         { this.state.children.map((c, i) => (
           <Motion key={i}
             defaultStyle={{cdx: 0, cdy: 0}}
@@ -65,7 +65,7 @@ export default class MotionBall extends React.Component {
             }}
             onRest={() => this.rest(i)}>
             {({ cdx, cdy }) =>
-              <MotionBall dx={cdx} dy={cdy} />
+              <MotionBall dx={cdx} dy={cdy} type={type} />
             }
           </Motion>
         ))}
