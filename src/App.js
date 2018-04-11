@@ -25,6 +25,7 @@ class App extends Component {
       <div className="App">
         <div>
           <span>Toggle shape</span>
+          <span>{`${window.innerWidth} x ${window.innerHeight}`}</span>
           <div class="App__Toggle" onClick={() => this.toggle()}></div>
         </div>
         <MotionBall dx={width} dy={height} type={this.state.type} />
