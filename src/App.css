@@ -3,6 +3,13 @@
   width: 100vw;
 }
 
+.App__Header {
+  background-color: teal;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 .App__Toggle
 {
   height: 20px;
