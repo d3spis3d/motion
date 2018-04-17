@@ -17,3 +17,9 @@
   border-radius: 50%;
   background-color: teal;
 }
+
+@media (max-width: 1023px) {
+  .App__Header {
+    display: none !important;
+  }
+}
