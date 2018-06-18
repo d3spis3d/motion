@@ -26,10 +26,8 @@ class App extends Component {
 
     return (
       <div className="App">
-        <div className="App__Header">Motion <span>{`${window.innerWidth} x ${window.innerHeight}`}</span></div>
         <div>
-          <span>Toggle shape</span>
-          <div className="App__Toggle" onClick={() => this.toggle()}></div>
+          <button className="App__Toggle" onClick={() => this.toggle()}>Toggle Shape</button>
         </div>
         <MotionBall dx={width} dy={height} type={this.state.type} />
       </div>
