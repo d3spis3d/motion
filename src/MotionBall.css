@@ -50,3 +50,103 @@
          -o-transform-origin: 100% 100%;
             transform-origin :100% 100%;
 }
+
+.MotionRainbow
+{
+  position: absolute;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.MotionRainbow-green
+{
+  background-color: green;
+}
+
+.MotionRainbow-red
+{
+  background-color: red;
+}
+
+
+.MotionRainbow-blue
+{
+  background-color: blue;
+}
+
+.MotionRainbow-pink
+{
+  background-color: pink;
+}
+
+.MotionRainbow-purple
+{
+  background-color: purple;
+}
+
+.MotionRainbow-yellow
+{
+  background-color: yellow;
+}
+
+.MotionRainbow-orange
+{
+  background-color: orange;
+}
+
+.MotionRainbow-skin
+{
+  background-color: #ffe0bd;
+}
+
+.MotionRainbow-mustard
+{
+  background-color: #ffdb58;
+}
+
+.MotionRainbow-brown
+{
+  background-color: saddlebrown;
+}
+
+.MotionRainbow-black
+{
+  background-color: black;
+}
+
+.MotionRainbow-light-green
+{
+  background-color: lightgreen;
+}
+
+.MotionRainbow-aqua
+{
+  background-color: aquamarine;
+}
+
+.MotionRainbow-orange-red
+{
+  background-color: orangered;
+}
+
+.MotionRainbow-light-blue
+{
+  background-color: lightblue;
+}
+
+.MotionRainbow-magenta
+{
+  background-color: magenta;
+}
+
+.MotionRainbow-dark-aqua
+{
+  background-color: mediumaquamarine;
+}
+
+.MotionRainbow-light-purple
+{
+  background-color: mediumpurple;
+}

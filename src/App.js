@@ -6,14 +6,17 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      type: 'Ball'
+      type: 0
     };
   }
 
   toggle() {
-    const other = this.state.type === 'Ball' ? 'Heart' : 'Ball';
+    let next = this.state.type + 1;
+    if (next > 2) {
+      next = 0;
+    }
     this.setState({
-      type: other
+      type: next
     });
   }
 
@@ -26,7 +29,7 @@ class App extends Component {
         <div className="App__Header">Motion <span>{`${window.innerWidth} x ${window.innerHeight}`}</span></div>
         <div>
           <span>Toggle shape</span>
-          <div class="App__Toggle" onClick={() => this.toggle()}></div>
+          <div className="App__Toggle" onClick={() => this.toggle()}></div>
         </div>
         <MotionBall dx={width} dy={height} type={this.state.type} />
       </div>
